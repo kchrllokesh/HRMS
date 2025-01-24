@@ -1,0 +1,14 @@
+{
+    "TableName": "LeaveRecords",
+    "KeySchema": [
+      { "AttributeName": "LeaveID", "KeyType": "HASH" }
+    ],
+    "AttributeDefinitions": [
+      { "AttributeName": "LeaveID", "AttributeType": "S" }
+    ],
+    "ProvisionedThroughput": {
+      "ReadCapacityUnits": 5,
+      "WriteCapacityUnits": 5
+    }
+  }
+  

@@ -1,0 +1,19 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Action": [
+          "dynamodb:PutItem",
+          "dynamodb:GetItem",
+          "s3:PutObject",
+          "s3:GetObject"
+        ],
+        "Resource": [
+          "arn:aws:dynamodb:your-region:your-account-id:table/EmployeeInfo",
+          "arn:aws:s3:::hrms-documents/*"
+        ]
+      }
+    ]
+  }
+  
